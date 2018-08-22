@@ -1,5 +1,8 @@
 const path = require('path');
+const fruits = require('./../model/index');
 
 exports.get = (req, res) => {
-  res.sendFile(path.join(__dirname, '..', '..', 'public', 'fruits.html'));
+  res.render('fruits', { fruits });
 };
+
+
